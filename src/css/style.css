@@ -1,0 +1,156 @@
+html, body {
+    background: #FAFAFA;
+}
+
+#tagline-section {
+    height: 100vh;
+}
+
+#tagline {
+    font-size: 3em;
+    font-weight: 300;
+}
+
+#sub-tagline {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 2em;
+}
+
+#tagline-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 45%;
+    color: #DFDFDF;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    #tagline-container {
+        height: 80%;
+    }
+}
+
+#tagline-photo-container {
+    display: flex;
+    justify-content: center;
+}
+
+#tagline-photo {
+    height: 55vh;
+    width: auto;
+}
+
+.feature {
+    text-align: center;
+    color: #DFDFDF;
+}
+
+.section-generic {
+    padding: 2em 6em;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .section-generic {
+        padding: 2em 2em;
+    }
+}
+
+.feature-icon i {
+    font-size: 4em;
+}
+
+.feature-header {
+    font-size: 1.75em;
+    font-weight: 600;
+    margin: 0.5em 0;
+}
+
+.feature-message {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+#detailed-features {
+    color: #DFDFDF;
+}
+
+.detailed-feature-header {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.detailed-feature-message {
+    font-weight: 300;
+}
+
+#closing-line-container {
+    text-align: center;
+    background: black;
+    color: #DFDFDF;
+}
+
+#closing-line {
+    font-size: 3em;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+footer {
+    background: darkgray;
+    color: #DFDFDF;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-weight: 300;
+}
+
+.weight-normal {
+    font-weight: 400;
+}
+
+.side-nav-logo {
+    color: white;
+    font-size: 1.5em;
+}
+
+.side-nav-your-recipes {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: white;
+}
+
+.side-nav-recipe a {
+    font-size: 1em;
+    font-weight: 400;
+    color: white !important;
+    padding-left: 2.5em !important;
+    line-height: 2.5em !important;
+    height: 2.5em !important;
+}
+
+.upper-settings-container {
+    -webkit-box-shadow: 0 3px 4px -4px black;
+    -moz-box-shadow: 0 3px 4px -4px black;
+    box-shadow: 0 3px 4px -4px black;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em 2em;
+}
+
+.content {
+    padding-left: 240px;
+}
+
+@media only screen and (max-width : 992px) {
+    .content {
+        padding-left: 0;
+    }
+}
+
+.dashboard {
+    padding: 1.5em;
+}
