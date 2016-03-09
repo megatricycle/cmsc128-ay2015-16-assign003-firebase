@@ -1,6 +1,10 @@
 <template>
-    <div class="dashboard">
-        <h5>Recipes</h5>
+    <div class="content-padding">
+        <div class="row">
+            <div class="col s12">
+                <h5>Recipes</h5>    
+            </div>
+        </div>
         
         <div class="row">
             <div class="col s6 m6 l3">
@@ -9,7 +13,7 @@
         </div>
         
         <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-            <a class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>
+            <a v-link="{ path: '/home/recipe/testrecipeid/edit' }" class="btn-floating btn-large waves-effect waves-light pink accent-3"><i class="mdi-content-add"></i></a>
         </div>
     </div>
 </template>

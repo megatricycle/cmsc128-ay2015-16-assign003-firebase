@@ -1,5 +1,5 @@
 <template>
-    <a v-link="{ path: '/' }">
+    <a v-link="{ path: '/home/recipe/testrecipeid' }">
         <div class="card">
             <div class="card-image">
                 <img src="/src/img/samplebg.png">

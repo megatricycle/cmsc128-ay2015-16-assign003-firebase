@@ -42,7 +42,7 @@
         </div>
     </section>
 
-    <section id="detailed-features" class="section-generic grey darken-4">
+    <section id="detailed-features" class="section-generic grey darken-2">
         <div class="row">
             <div class="col s12 m12 l6">
                 <h2 class="detailed-feature-header">This is something awesome.</h2>
@@ -73,7 +73,7 @@
     <footer class="blue darken-4">
         <div class="container">
             <div class="row" style="margin-bottom:0;">
-                <div class="col s12 m12 l6">RecipeMaster ©Copyright 2016</div>
+                <div class="col s12 m12 l6">Recipe Master ©Copyright 2016</div>
                 <div class="col s12 m12 l6">Email us at <span class="weight-normal">pbmrupa@gmail.com</span></div>
             </div>
         </div>
@@ -82,15 +82,5 @@
 
 <script>
 export default {
-    props: ['state'],
-    data () {
-        return {
-            // note: changing this line won't causes changes
-            // with hot-reload because the reloaded component
-            // preserves its current state and we are modifying
-            // its initial state.
-            msg: 'Hello World!'
-        }
-    }
 }
 </script>
