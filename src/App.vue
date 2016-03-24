@@ -1,5 +1,5 @@
 <template>
-  <router-view :state="state"></router-view>   
+  <router-view></router-view>   
 </template>
 
 <script>

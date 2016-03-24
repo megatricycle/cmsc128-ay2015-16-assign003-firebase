@@ -13,19 +13,22 @@
     <ul id="admin-sidenav" class="side-nav fixed blue-grey darken-4">
         <li class="blue darken-4 side-nav-logo"><a v-link="{ path: '/home' }">Recipe Master</a></li>
         <li class="blue-grey darken-4 side-nav-your-recipes">Your recipes</li>
-        <li class="blue-grey darken-4 side-nav-recipe"><a v-link="{ path: '/home/recipe/testrecipeid' }">Baked Potato</a></li>
-        <li class="blue-grey darken-4 side-nav-recipe"><a v-link="{ path: '/home/recipe/testrecipeid' }">Chicken Ala King</a></li>
+        <li class="blue-grey darken-4 side-nav-recipe" v-for="recipe in sharedData.recipes">
+            <a v-link="{ path: '/home/recipe/' + recipe.id }">{{recipe.name}}</a>
+        </li>
     </ul>
 </template>
 
 <script>
+import store from '../data.js';
+
 export default {
     attached() {
         $('#hamburger').sideNav();
     },
     data () {
         return {
-            
+            sharedData: store
         }
     },
     methods: {

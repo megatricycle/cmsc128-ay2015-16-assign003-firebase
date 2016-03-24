@@ -179,3 +179,43 @@ ol {
 .tabs {
     overflow: hidden;
 }
+
+textarea.no-resize {
+    resize: none;
+}
+
+#edit-name-field {
+    display: inline;
+}
+
+.preview-container {
+    min-height: 20em;
+}
+
+.load-message {
+    font-size: 125%;
+}
+
+.recipe-img {
+    height: 200px;
+}
+
+.card-title {
+    z-index: 3;
+}
+
+.black-filter {
+    background:rgba(0,0,0,0.7);
+    height:100%;
+    width:100%;
+    position:absolute;
+    z-index:1;
+}
+
+.loading-page {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}

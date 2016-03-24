@@ -7,8 +7,8 @@
         </div>
         
         <div class="row">
-            <div class="col s6 m6 l3">
-                <recipe-card></recipe-card>
+            <div class="col s6 m6 l3" v-for="recipe in sharedData.recipes">
+                <recipe-card :recipe="recipe"></recipe-card>
             </div>
         </div>
         
@@ -20,6 +20,8 @@
 
 <script>
 import RecipeCard from './RecipeCard.vue';
+import LoadingSpinner from './LoadingSpinner.vue';
+import store from '../data';
 
 export default {
     components: {
@@ -27,6 +29,7 @@ export default {
     },
     data () {
         return {
+            sharedData: store
         };
     }
 }
