@@ -7,14 +7,7 @@
 export default {
     data() {
         return {
-            state: 'hello'
         };
     }
 }
 </script>
-
-<style>
-body {
-  font-family: Helvetica, sans-serif;
-}
-</style>

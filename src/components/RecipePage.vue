@@ -28,16 +28,11 @@
 </template>
 
 <script>
-import LoadingSpinner from './LoadingSpinner.vue';
-
 import store from '../data';
 import { elementWithAttr } from '../util';
 import { markdown } from 'markdown';
 
 export default {
-    components: {
-        LoadingSpinner
-    },
     data () {
         return {
             sharedData: store

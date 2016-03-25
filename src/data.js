@@ -4,6 +4,7 @@ const CX = '005884473102728766654:walplzq2xi8';
 
 let recipesStore = new Firebase('https://recipe-master.firebaseio.com/recipes');
 
+// shared store with all components
 let store = {
     recipes: [],
     recipeLoading : true,
@@ -18,7 +19,8 @@ recipesStore.on("value", function(snapshot) {
     store.recipes = [];
     
     let imgCount = 0;
-    
+
+    // convert snapshots into array form    
     for(let key in recipeSnapshots) {
         let temp = recipeSnapshots[key];
         

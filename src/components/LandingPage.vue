@@ -1,8 +1,8 @@
 <template>
-    <section id="tagline-section" class="blue darken-4">
+    <section id="tagline-section" class="blue darken-3">
         <div id="tagline-container">
-            <h1 id="tagline">Your recipes in one place.</h1>
-            <p id="sub-tagline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, quas.</p>
+            <h1 id="tagline">Recipe Master</h1>
+            <p id="sub-tagline">Your recipes, in one place.</p>
             <a v-link="{ path: '/home' }" class="btn pink accent-3">Get started</a>
         </div>
         <div id="tagline-photo-container" class="hide-on-med-and-down">
@@ -14,29 +14,29 @@
         <div class="row">
             <div class="col s12 m12 l4 feature">
                 <div class="feature-icon">
-                    <i class="mdi-action-account-circle"></i>
+                    <i class="mdi-action-backup"></i>
                 </div>
                 <div class="feature-content">
-                    <p class="feature-header">Awesome</p>
-                    <p class="feature-message">Watch and be amazeballs.</p>
+                    <p class="feature-header">On the cloud</p>
+                    <p class="feature-message">Access your recipes from everywhere.</p>
                 </div>
             </div>
             <div class="col s12 m12 l4 feature">
                 <div class="feature-icon">
-                    <i class="mdi-action-account-circle"></i>
+                    <i class="mdi-image-tag-faces"></i>
                 </div>
                 <div class="feature-content">
-                    <p class="feature-header">Featured</p>
-                    <p class="feature-message">Some supporting details.</p>
+                    <p class="feature-header">Simple</p>
+                    <p class="feature-message">Easy to use interface.</p>
                 </div>
             </div>
             <div class="col s12 m12 l4 feature">
                 <div class="feature-icon">
-                    <i class="mdi-action-account-circle"></i>
+                    <i class="mdi-hardware-phone-iphone"></i>
                 </div>
                 <div class="feature-content">
-                    <p class="feature-header">Featured</p>
-                    <p class="feature-message">Some supporting details.</p>
+                    <p class="feature-header">Mobile Friendly</p>
+                    <p class="feature-message">Access your recipes on the go.</p>
                 </div>
             </div>
         </div>
@@ -45,22 +45,24 @@
     <section id="detailed-features" class="section-generic grey darken-2">
         <div class="row">
             <div class="col s12 m12 l6">
-                <h2 class="detailed-feature-header">This is something awesome.</h2>
-                <p class="detailed-feature-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure neque assumenda quos deleniti officiis earum nisi magnam! Numquam, at sint.</p>
-                <p class="detailed-feature-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut vitae reprehenderit debitis dolore sunt accusamus unde aspernatur illo quos itaque, eligendi esse nulla laudantium fugit voluptas perspiciatis! Minima maiores quia natus quidem qui incidunt provident autem! Doloremque, quia adipisci ea?</p>
+                <h2 class="detailed-feature-header">Automatic images for your recipes.</h2>
+                <p class="detailed-feature-message">We fetch images from Google to give your recipes a look.</p>
+                <p class="detailed-feature-message">We select the best and the most appropriate image for your recipe. No need to upload it yourself.</p>
             </div>
             <div class="col s12 m12 l6 hide-on-med-and-down">
-                <p style="text-align:center">Photo here</p>
+                <div class="center">
+                    <img src="/src/img/ss1.png" style="width: 50%;"/>
+                </div>
             </div>
         </div>
         
         <div class="row">
             <div class="col s12 m12 l6 hide-on-med-and-down">
-                <p style="text-align:center">Photo here</p>
+                <img src="/src/img/ss2.png" style="width: 100%;"/>
             </div>
             <div class="col s12 m12 l6">
-                <h2 class="detailed-feature-header">This is also something awesome.</h2>
-                <p class="detailed-feature-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est pariatur magni amet quod impedit natus, earum, veniam. Pariatur dolore veniam ratione modi? Illum sequi saepe odit repellendus ipsam autem veniam molestiae rerum placeat?</p>
+                <h2 class="detailed-feature-header">Markdown Supported.</h2>
+                <p class="detailed-feature-message">Use Markdown to style your recipes accordingly. Use headers, ordered list, unordered list, and among many others to organize your texts.</p>
             </div>
         </div>
     </section>

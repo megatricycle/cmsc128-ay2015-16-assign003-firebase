@@ -35,6 +35,7 @@ export default {
     },
     methods: {
         mobileHide() {
+            // close sidenav if mobile
             let windowsize = $(window).width();
             
             if (windowsize < 992) {
