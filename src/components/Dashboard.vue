@@ -7,13 +7,13 @@
         </div>
         
         <div class="row">
-            <div class="col s6 m6 l3" v-for="recipe in sharedData.recipes">
-                <recipe-card :recipe="recipe"></recipe-card>
+            <div class="col s12 m12 l3" v-for="recipe in sharedData.recipes">
+                <recipe-card v-if="recipe" :recipe="recipe"></recipe-card>
             </div>
         </div>
         
         <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-            <a v-link="{ path: '/home/recipe/testrecipeid/edit' }" class="btn-floating btn-large waves-effect waves-light pink accent-3"><i class="mdi-content-add"></i></a>
+            <a href="#" class="btn-floating btn-large waves-effect waves-light pink accent-3" v-on:click="addRecipe"><i class="mdi-content-add"></i></a>
         </div>
     </div>
 </template>
@@ -31,6 +31,19 @@ export default {
         return {
             sharedData: store
         };
+    },
+    methods: {
+        addRecipe(e) {
+            e.preventDefault();
+            
+            let insertedId = this.sharedData.addRecipe({
+                name: 'Untitled-recipe',
+                tags: [],
+                text: ''
+            });
+            
+            this.$route.router.go('/home/recipe/' + insertedId + '/edit?created=1');
+        }
     }
 }
 </script>

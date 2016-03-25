@@ -11,10 +11,12 @@
     </div>
 
     <ul id="admin-sidenav" class="side-nav fixed blue-grey darken-4">
-        <li class="blue darken-4 side-nav-logo"><a v-link="{ path: '/home' }">Recipe Master</a></li>
+        <li class="blue darken-4 side-nav-logo">
+            <a v-link="{ path: '/home' }" v-on:click="mobileHide">Recipe Master</a>
+        </li>
         <li class="blue-grey darken-4 side-nav-your-recipes">Your recipes</li>
         <li class="blue-grey darken-4 side-nav-recipe" v-for="recipe in sharedData.recipes">
-            <a v-link="{ path: '/home/recipe/' + recipe.id }">{{recipe.name}}</a>
+            <a v-link="{ path: '/home/recipe/' + recipe.id }" v-on:click="mobileHide">{{recipe.name}}</a>
         </li>
     </ul>
 </template>
@@ -32,6 +34,13 @@ export default {
         }
     },
     methods: {
+        mobileHide() {
+            let windowsize = $(window).width();
+            
+            if (windowsize < 992) {
+                $('#hamburger').sideNav('hide');
+            }
+        }
     }
 }
 </script>

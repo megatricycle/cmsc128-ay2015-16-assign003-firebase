@@ -194,6 +194,7 @@ textarea.no-resize {
 
 .load-message {
     font-size: 125%;
+    text-align: center;
 }
 
 .recipe-img {
@@ -218,4 +219,59 @@ textarea.no-resize {
     height: 100vh;
     align-items: center;
     flex-direction: column;
+}
+
+/* markdown */
+
+.recipe-text strong {
+    font-weight: bold;
+}
+
+.recipe-text ul li {
+    list-style: initial;
+    margin-left: 1em;
+}
+
+.recipe-text code {
+    background: #f1f1f1;
+}
+
+/* css rules ripped from github */
+
+.recipe-text h1 {
+    padding-bottom: 0.3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+
+.recipe-text h2 {
+    padding-bottom: 0.3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+.recipe-text h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+
+.recipe-text h4 {
+    font-size: 1.25em;
+}
+
+.recipe-text h5 {
+    font-size: 1em;
+}
+
+.recipe-text h6 {
+    font-size: 1em;
+    color: #777;
+}
+
+@media only screen and (max-width: 600px) {
+    .row .col.s12 {
+        padding: 0;
+    }
 }

@@ -1,4 +1,4 @@
-// I don't really care about my google API credentials.
+// Keys
 const API_KEY = 'AIzaSyDhlhCf8driLdxhpV5Uu0SoDTWbpYjTWZ4';
 const CX = '005884473102728766654:walplzq2xi8';
 
@@ -6,7 +6,10 @@ let recipesStore = new Firebase('https://recipe-master.firebaseio.com/recipes');
 
 let store = {
     recipes: [],
-    recipeLoading : true
+    recipeLoading : true,
+    addRecipe(recipe) {
+        return recipesStore.push(recipe).key();
+    }
 };
 
 recipesStore.on("value", function(snapshot) {
