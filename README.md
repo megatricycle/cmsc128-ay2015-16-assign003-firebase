@@ -1,6 +1,5 @@
 # RecipeMaster
-
-> A handy application for storing your recipes
+A handy application for storing your recipes
 
 ## Build Setup
 
