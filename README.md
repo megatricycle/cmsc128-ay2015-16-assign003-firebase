@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # RecipeMaster
 
 > A handy application for storing your recipes
