@@ -9,7 +9,6 @@ import RecipePage from './components/RecipePage.vue';
 import EditRecipe from './components/EditRecipe.vue';
 
 Vue.use(VueRouter);
-Vue.config.debug = true;
 
 const router = new VueRouter({
     // history: true
