@@ -47,7 +47,7 @@
             <div class="col s12 m12 l6">
                 <h2 class="detailed-feature-header">Automatic images for your recipes.</h2>
                 <p class="detailed-feature-message">We fetch images from Google to give your recipes a look.</p>
-                <p class="detailed-feature-message">We select the best and the most appropriate image for your recipe. No need to upload it yourself.</p>
+                <p class="detailed-feature-message">We select the best and the most appropriate image for your recipe. No need to upload it yourself. Only works when our custom engine hasn't reached the daily API limit of Google yet. ;)</p>
             </div>
             <div class="col s12 m12 l6 hide-on-med-and-down">
                 <div class="center">

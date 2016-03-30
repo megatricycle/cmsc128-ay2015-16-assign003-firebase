@@ -101,7 +101,10 @@ export default {
             this.privateData.editingName = true;
         },
         doneNameEdit(e) {
-            e.preventDefault();
+            if(e) {
+                e.preventDefault();
+            }
+            
             this.privateData.name = $('#edit-name-field').val();
             this.privateData.editingName = false;
         },
@@ -112,6 +115,10 @@ export default {
             
             let recipeRef = new Firebase('https://recipe-master.firebaseio.com/recipes/' + recipe.id);
             
+            if(this.privateData.editingName) {
+                this.doneNameEdit();
+            }
+                        
             recipeRef.update({
                 name: this.privateData.name,
                 text: this.privateData.text,
